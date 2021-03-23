@@ -1,0 +1,115 @@
+
+
+ion-icon {
+    color:whitesmoke;
+    --ionicon-stroke-width: 80px;
+  }
+
+.green{
+  background-color: green;
+  margin-left: 1%;
+  padding: 0px 1%;
+  border-radius: 4px;
+  color: black;
+}
+.yellow{
+  background-color: yellow;
+  margin-left: 1%;
+  padding: 0px 1%;
+  border-radius: 4px;
+  color: black;
+}
+.orange{
+  background-color: orange;
+  margin-left: 1%;
+  padding: 0px 1%;
+  border-radius: 4px;
+  color: black;
+}
+.red{
+  background-color: red;
+  margin-left: 1%;
+  padding: 0px 1%;
+  border-radius: 4px;
+  color: black;
+}
+
+.purple{
+  background-color: purple;
+  margin-left: 1%;
+  padding: 0px 1%;
+  border-radius: 4px;
+  color: black;
+}
+
+.container-custom {
+  width: 100%;
+}
+
+.custom-cl {
+  width: 100%;
+  white-space: nowrap;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.ps-0 {
+  padding: 10px 0px;
+}
+.pr-0 {
+  padding-right: 0;
+}
+
+.row-fluid {
+  display: flex;
+}
+
+h3 {
+  margin-top: 0;
+}
+
+.yellow-date {
+  margin-left: 1%;
+  color: rgb(255, 255, 105);
+  font-size: 30px;
+}
+
+.weather-title {
+  font-size: 30px;
+}
+
+.custom-h-li {
+  padding: 2px 5px;
+  background-color: rgba(255, 255, 255, 0.678);
+}
+
+.custom-h-li:hover {
+  padding: 2px 5px;
+  border: solid;
+  border-color: yellow;
+  border-width: 1px;
+}
+
+.customTemp5 {
+  color: white;
+  font-size: 30px;
+  font-family: 'Ranchers', cursive;
+}
+
+.fontBebas {
+  font-family: 'Bebas Neue', cursive;
+}
+
+.weather-card {
+  font-size: 20px;
+}
+
+.forecastTitle {
+  font-size: 30px;
+}

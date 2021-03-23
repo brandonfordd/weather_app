@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
+    <title>Weather Dashboard</title>
+  </head>
+  <body class="bg-secondary">
+
+    <div class="container-custom bg-secondary">
+
+      <header class=" jumbotron-fluid bg-dark text-white text-center">
+        <div class="container-custom">
+          <h1 class="display-4 fontBebas">Weather Dashboard</h1>
+        </div>
+      </header>
+
+      <main class="row col-12 m-0 justify-content-center bg-secondary">
+
+        <div id="searchCard" class="card col-xl-1 col-md-3 col-sm-8 bg-dark searchCard mt-3 ml-custom">
+          <div class="card-header bg-dark ps-0">
+            <h3 class="text-white text-center fontBebas">Search for a City!</h3>
+          </div>
+          
+          <div class="input-group mb-1">
+            <input type="text" class="form-control text-center col" id="city-input" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <button id ="add-city" class="btn btn-outline-secondary bg-primary" type="button"><ion-icon name="search-outline"></ion-icon> </button>
+            </div>
+          </div>
+          <!-- Beginning of history cities box -->
+          <div>
+            <ul id="city-list" class="list-group custom-cl">
+              
+            </ul>
+          </div>
+          <button id ="clearBtn" class="btn btn-outline-danger mt-auto mb-2" type="button">clear</button>
+        </div>
+
+        <!-- Beginning of col 2 in rwo 1 -->
+        <div class="col-9 col-xl-6 m-0 pr-0 mt-3" id="weatherCard">
+          <!-- Beginning of row 1 in col 2 -->
+          <div class="row-12 weather-tab fontBebas" id="weather-tab">
+
+          </div>
+          <br>
+          <!-- Beginning of row 2 in col 2 -->
+          <div class="row-12 forecast-tab" id="forecast-tab">
+
+          </div>
+
+        </div>
+
+      </main>
+
+    </div>
+   </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
