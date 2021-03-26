@@ -36,20 +36,20 @@ function renderCities() {
     
     // Render a new li for each city
     for (let i = 0; i < cities.length; i++) {
-        let city = cities[i];
-      let li = $("<li>").text(city);
+      let cityS = cities[i];
+      let li = $("<li>").text(cityS);
       li.attr("id","listC");
-      li.attr("data-city", city);
+      li.attr("data-city", cityS);
       li.attr("class", "list-group-item custom-h-li");
       console.log(li);
       cityList.prepend(li);
 
         //Get Response weather for the first city only
-        if (!city){
+        if (!cityS){
             return
         } 
         else{
-            getResponseWeather(city)
+            getResponseWeather(cityS)
         };
     };
 };
@@ -73,9 +73,12 @@ $("#add-city").on("click", function(event){
     } else {
     $("#searchCard").removeClass( "col-xl-2 col-md-6 col-sm-8" ).addClass( "col-xl-1 col-md-3 col-sm-8" );
     $("#weatherCard").addClass("col-9 col-xl-6 custom-r mt-3")
-    }   
+    };
+
+
+
     //Store updated cities in localStorage, re-render the list
-    return storeCities() , renderCities();
+    return storeCities(), renderCities();
 });
 
 //Function get Response Weather 
@@ -120,6 +123,8 @@ function getResponseWeather(cityName){
         $(".today-weather").append(cityHumidity);
         let cityWindSpeed = $("<p>").text("Wind Speed: "+ data.wind.speed + " MPH");
         $(".today-weather").append(cityWindSpeed);
+        let uvBox = $("<div>").attr("class", "uvBox")
+        $(".today-weather").append(uvBox)
 
         //setting cords for UV index
         let CoordLon = data.coord.lon;
@@ -128,6 +133,8 @@ function getResponseWeather(cityName){
         let queryURL2 = "https://api.openweathermap.org/data/2.5/uvi?appid="+ key+ "&lat=" + CoordLat +"&lon=" + CoordLon;
         fetch(queryURL2).then(function(response) {
             if (response.ok) {
+                //reset boxes for ever new call
+                $(".uvBox").empty();
                 return response.json();
             } else {
                 return
@@ -138,7 +145,7 @@ function getResponseWeather(cityName){
             let cityUV = $("<span>").text(responseuv.value);
             let cityUVp = $("<p>").text("UV Index: ");
             cityUVp.append(cityUV);
-            $(".today-weather").append(cityUVp);
+            $(".uvBox").append(cityUVp);
             //conditional statement to change background color depending on UV  
             if(responseuv.value > 0 && responseuv.value <=2){
                 cityUV.attr("class","green")
