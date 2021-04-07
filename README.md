@@ -1,6 +1,19 @@
-# 06 Server-Side APIs: Weather Dashboard
+# Server-Side APIs: Weather Dashboard
 
-## Your Task
+## Deployed Site
+https://brandonfordd.github.io/weather_app/
+
+## Technologies Used
+```
+HTML5
+CSS3
+Javascript
+Boottrap
+Moment.js
+OpenWeather API
+```
+
+## The Task
 
 Third-party APIs allow developers to access their data and functionality by making requests with specific parameters to a URL. Developers are often tasked with retrieving data from another application's API and using it in the context of their own. Your challenge is to build a weather dashboard that will run in the browser and feature dynamically updated HTML and CSS.
 
@@ -33,6 +46,10 @@ THEN I am again presented with current and future conditions for that city
 ## Mock-Up
 
 The following image shows the web application's appearance.
-![alt text](https://github.com/brandonfordd/weather_app/blob/main/assets/images/weather_app_screenshot.png?raw=true)
 
+1.
+![alt text](https://github.com/brandonfordd/weather_app/blob/main/assets/images/screenshot-weather1.png?raw=true)
+
+2.
+![alt text](https://github.com/brandonfordd/weather_app/blob/main/assets/images/weather_app_screenshot.png?raw=true)
 
