@@ -9,6 +9,7 @@ HTML5
 CSS3
 Javascript
 Boottrap
+Jquery
 Moment.js
 OpenWeather API
 ```
